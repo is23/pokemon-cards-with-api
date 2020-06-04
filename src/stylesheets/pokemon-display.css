@@ -40,6 +40,7 @@
 
 .front {
     background: rgb(255, 153, 0);
+    text-align: center;
 }
 
 .back {
@@ -47,4 +48,6 @@
     transform: rotateY(180deg);
 }
 
-
+.front img {
+    width: 90%;
+}

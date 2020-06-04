@@ -9,8 +9,9 @@ function App() {
 
   useEffect(() => {
     axios.get("https://pokeapi.co/api/v2/pokemon?limit=150&offset=0").then( res => {
-      setPokemon(res.data.results.map(p => p.name))
+      setPokemon(res.data.results.map(p => p))
     })
+    
   }, [])
 
   return (
