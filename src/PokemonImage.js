@@ -4,7 +4,7 @@ export default function PokemonImage(props) {
     return (
         <div>
             {console.log(props.index)}
-            <img src={`https://pokeres.bastionbot.org/images/pokemon/${props.index + 1}.png`}></img>
+            <img src={process.env.PUBLIC_URL + `/images/allPokemonImages/image${props.index + 1}.png`}></img>
         </div>
     )
 }

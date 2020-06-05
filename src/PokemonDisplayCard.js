@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import PokemonImage from './PokemonImage'
 
 export default function PokemonDisplayCard(props) {
@@ -6,14 +6,12 @@ export default function PokemonDisplayCard(props) {
 
     return (
         <div className="display-area">
-            {/*image of each pokemon component*/}
-            {/*name of each pokemon component*/}
             {pokemon.map(p => (
-                <div className="display-card">
+                <div key={p.name} className="display-card">
                     <div className="card-content">
                         <div className="front">
                             <PokemonImage index={pokemon.indexOf(p)}/>
-                            <div key={p.name}>{p.name}</div>
+                            <div>{p.name}</div>
                         </div>
                         <div className="back"></div>
                     </div>
