@@ -1,5 +1,6 @@
 import React from 'react'
 import PokemonImage from './PokemonImage'
+import PokemonInfo from './PokemonInfo'
 
 export default function PokemonDisplayCard(props) {
     const { pokemon } = props;
@@ -13,7 +14,10 @@ export default function PokemonDisplayCard(props) {
                             <PokemonImage index={pokemon.indexOf(p)}/>
                             <div>{p.name}</div>
                         </div>
-                        <div className="back"></div>
+                        <div className="back">
+                            <div>{p.name}</div>
+                            <PokemonInfo index={pokemon.indexOf(p)}/>
+                        </div>
                     </div>
                 </div>
             ))}

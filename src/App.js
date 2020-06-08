@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import PokemonDisplayCard from './PokemonDisplayCard'
 import Header from './Header'
-import axios from 'axios'
 import pokemonName from './json/allPokemon.json'
 import './stylesheets/App.css'
 
@@ -15,7 +14,7 @@ function App() {
     setPokemon(pokemonName.results.map(p => p))
     
   }, [])
-  console.log(pokemon)
+
   return (
     <>
       <Header />
