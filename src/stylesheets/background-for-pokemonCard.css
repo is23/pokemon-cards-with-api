@@ -1,0 +1,109 @@
+.grass {
+    background-color: #007f0080;
+}
+
+.fire {
+    background-color: #8a1d00cc;
+}
+
+.water {
+    background-color: #003e8ab8;
+}
+
+.normal {
+    background-color: #f7060678;
+}
+
+.ghost {
+    background-color: #4e586bde;
+}
+
+.poison {
+    background-color: #37560ead;
+}
+    
+.rock {
+    background-color: #4f6265e3;
+}
+.psychic{
+    background-color: #9865eae0;
+}
+    
+.electric{
+    background-color: #f3cb4ddb;
+}
+    
+.ground{
+    background-color: #008080c2;
+}
+.fighting{
+    background-color: #c51738db;
+}
+
+.bug {
+    background-color: #885e40c7;
+}
+
+.dragon {
+    background-color: #ec8700c7;
+}
+
+.ice {
+    background-color: #216198ab;
+}
+
+.grassfont {
+    color: #007f0080;
+}
+
+.firefont {
+    color: #8a1d00cc;
+}
+
+.waterfont {
+    color: #003e8ab8;
+}
+
+.normalfont {
+    color: #f7060678;
+}
+
+.ghostfont {
+    color: #4e586bde;
+}
+
+.poisonfont {
+   color: #37560ead;
+}
+    
+.rockfont {
+    color: #4f6265e3;
+}
+.psychicfont{
+    color: #9865eae0;
+}
+    
+.electricfont{
+    color: #f3cb4ddb;
+}
+    
+.groundfont{
+    color: #008080c2;
+}
+.fightingfont{
+    color: #c51738db;
+}
+
+.bugfont {
+    color: #885e40c7;
+}
+
+.dragonfont {
+    color: #ec8700c7;
+}
+.icefontfont {
+    color: #216198ab;
+}
+
+
+   
