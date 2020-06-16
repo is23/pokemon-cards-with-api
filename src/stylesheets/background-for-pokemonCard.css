@@ -1,5 +1,25 @@
+:root {
+    --grass-color: hsl(114, 35%, 60%);
+    --fire-color: hsl(35, 81%, 35%);
+    --water-color: hsl(193, 68%, 36%);
+    --normal-color: hsl(312, 59%, 23%);
+    --ghost-color: hsl(350, 87%, 10%);
+    --poison: hsl(83, 62%, 16%);
+    --rock: hsl(159, 56%, 30%); 
+    --psychic: hsl(179, 51%, 17%);
+    --electric: hsl(49, 71%, 49%);
+    --ground: hsl(35, 59%, 24%);
+    --fighting: hsl(0, 59%, 28%);
+    --bug: hsl(126, 51%, 15%);
+    --dragon: hsl(35, 79%, 34%);
+    --ice: hsl(182, 54%, 41%);
+    --fairy: hsl(349, 59%, 51%);
+
+}
+
 .grass {
     background-color: #007f0080;
+    
 }
 
 .fire {

@@ -17,6 +17,7 @@ function App() {
     setPokemonType(PokemonsType)
     
   }, [])
+    
   return (
     <>
       <Header />

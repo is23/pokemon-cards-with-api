@@ -30,6 +30,7 @@
     transform: rotateY(180deg);
 }
 
+
 .front, .back {
     position: absolute;
     width: 100%;
@@ -45,6 +46,10 @@
 .back {
     background: rgb(32, 170, 106);
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .front img {
@@ -60,7 +65,93 @@
 .pokemon-name-section {
     height: 20%;
     background-color: #fbfbed;
-    font-size: 3rem;
     font-family: Gill Sans, sans-serif;
     font-variant-caps: all-petite-caps;
+    overflow: hidden;
 }
+
+.back img {
+    height: 100%
+}
+
+.back-image-background {
+    width: 100%;
+    height: 39%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    /*use ivory color for backgrounds of names*/
+}
+
+.back-card-name {
+    width: 100%;
+    height: 10%;
+}
+
+.back-card-name > h4 {
+    margin: 0;
+}
+
+.pokeInfo-area {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.weight-height {
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.types {
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeStat {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid black;
+    width: 80%;
+    background-color: #fbfbed;
+    text-align: left;
+}
+
+.statBar  {
+    content: '';
+    /* display: inline; */
+    /* margin-left: 20px; */
+    margin: 1px 1px;
+    height: 2px;
+    color: red;
+    border: 1px solid black;
+    /* vertical-align: middle; */
+}
+
+.display-card:hover .statBar {
+    animation-name: statBars;
+    animation-duration: 1s;
+}
+
+@keyframes statBars {
+    from {width: 0;}
+    to {}
+
+}
+
