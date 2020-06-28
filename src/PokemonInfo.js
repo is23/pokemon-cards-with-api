@@ -23,13 +23,13 @@ export default function PokemonInfo(props) {
     return (
         <div className="pokeInfo-area">
             <div className="weight-height">
-                <div className="box">
+                <div className="box center-box">
                     <p>Height: {pokemonHeight}</p>
                     <p>Weight: {pokemonWeight}</p>
                 </div>
             </div>
             <div className="types">
-                <div className="box">
+                <div className="box center-box">
                     {pokemonType.map(t => (
                         <div key={index + t.type.name}> {t.type.name} </div>    
                     ))}

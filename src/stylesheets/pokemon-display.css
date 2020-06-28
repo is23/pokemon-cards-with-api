@@ -44,7 +44,7 @@
 }
 
 .back {
-    background: rgb(32, 170, 106);
+    background: #feb236;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -92,6 +92,13 @@
 
 .back-card-name > h4 {
     margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    color: wheat;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 1.5px;
 }
 
 .pokeInfo-area {
@@ -127,10 +134,21 @@
 }
 
 .box {
-    border: 1px solid black;
+    border: 1px solid #f9f0f0;
     width: 80%;
-    background-color: #fbfbed;
+    background-color: #000000;
     text-align: left;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: wheat;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.center-box {
+    text-align: center;
 }
 
 .statBar  {
@@ -140,13 +158,14 @@
     margin: 1px 1px;
     height: 2px;
     color: red;
-    border: 1px solid black;
+    border: 1px solid #e89b0c;
     /* vertical-align: middle; */
+    background-color: #feb236;
 }
 
 .display-card:hover .statBar {
     animation-name: statBars;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 @keyframes statBars {
@@ -154,4 +173,56 @@
     to {}
 
 }
+
+.statNumber {
+    color: green;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.statNumber::before {
+    content: 'Calculating.';
+    visibility: hidden;
+    font-size: .8rem;
+}
+
+
+.display-card:hover .statNumber {
+    color: wheat;
+    animation-name: showStatNumber;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showStatNumber {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.display-card:hover .statNumber::before {
+    animation-name: beforeStatNumber;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes beforeStatNumber {
+    25% {
+        visibility: visible;
+        content: "Calculating..";
+    }
+    50% {
+        content: "Calculating...";
+    }
+    99% {
+        content: "Calculating....";
+    }
+    100% {
+        content: "";
+    }
+}
+
 

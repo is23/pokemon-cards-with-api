@@ -23,7 +23,7 @@ export default function PokemonDisplayCard(props) {
                                 <h1>{p.name}</h1>
                             </div>
                         </div>
-                        <div className={`back ${typesOfPokemon[pokemon.indexOf(p)+1]}`}>
+                        <div className={`back`}>
                             <div className='back-card-name'><h4>{p.name}</h4></div>
                             <PokemonImage 
                                 index={pokemon.indexOf(p)} 
